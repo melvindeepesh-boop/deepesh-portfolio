@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Deepesh M | Machine Learning Engineer Portfolio</title>
+  <meta name="description" content="Official portfolio of Deepesh M showcasing AI, Machine Learning, Data Science, and Full-Stack Development projects.">
+  <meta name="keywords" content="Deepesh M, Machine Learning Engineer, AI Student, Full-Stack AI Developer, Chennai, Koyambedu, KaiKani, DMI College of Engineering">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deepesh M | Machine Learning Engineer Portfolio">
+  <meta property="og:description" content="Official portfolio of Deepesh M showcasing AI, Machine Learning, Data Science, and Full-Stack Development projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/melvindeepesh-boop">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Avoid FOUC (Flash of Unstyled Content) -->
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      const colorScheme = localStorage.getItem("color-scheme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.classList.add(colorScheme);
+      document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="neuron-network">
+        <div class="neuron n1"></div>
+        <div class="neuron n2"></div>
+        <div class="neuron n3"></div>
+        <div class="neuron n4"></div>
+        <svg class="neuron-lines">
+          <line x1="50" y1="20" x2="20" y2="70" />
+          <line x1="50" y1="20" x2="80" y2="70" />
+          <line x1="20" y1="70" x2="50" y2="120" />
+          <line x1="80" y1="70" x2="50" y2="120" />
+          <line x1="50" y1="20" x2="50" y2="120" />
+        </svg>
+      </div>
+      <h2>Deepesh.ai</h2>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="loader-status">Initializing AI Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar-top"></div>
+  </div>
+
+  <!-- Three.js 3D Scene Background -->
+  <div id="canvas-3d-container"></div>
+
+  <!-- Persistent Floating Social Dock -->
+  <div class="floating-social-dock">
+    <a href="https://github.com/melvindeepesh-boop" target="_blank" rel="noopener noreferrer" class="social-dock-btn github-dock" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+      <span class="dock-tooltip">GitHub</span>
+    </a>
+    <a href="https://linkedin.com/in/deepesh-m-b055b2389" target="_blank" rel="noopener noreferrer" class="social-dock-btn linkedin-dock" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+      <span class="dock-tooltip">LinkedIn</span>
+    </a>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo magnetic">
+        <span class="logo-accent">&lt;</span>Deepesh<span class="logo-dot">.ai</span><span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="magnetic" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+        <button id="mobile-menu-trigger" aria-label="Open navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-aurora"></div>
+      <div class="hero-spotlight"></div>
+      
+      <!-- Holographic AI Sphere container -->
+      <div class="hologram-sphere-container">
+        <div class="hologram-sphere"></div>
+      </div>
+
+      <!-- Animated Code Particles Overlay -->
+      <div class="code-particles-container">
+        <div class="code-particle cp1">print("Hello, AI")</div>
+        <div class="code-particle cp2">model.fit(X, y)</div>
+        <div class="code-particle cp3">import tensorflow as tf</div>
+        <div class="code-particle cp4">FastAPI()</div>
+        <div class="code-particle cp5">JSX.Element</div>
+        <div class="code-particle cp6">nn.Linear(256, 128)</div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-ping"></span>
+            <span class="tag-text">Deploying Intelligence</span>
+          </div>
+          <h1 class="hero-title">Deepesh M</h1>
+          
+          <div class="hero-subtitles-wrapper">
+            <p class="hero-subtitle">
+              <span class="typed-text txt-primary">Machine Learning Engineer</span>
+              <span class="sub-pipe">/</span>
+              <span class="typed-text txt-secondary">AI & ML Student</span>
+              <span class="sub-pipe">/</span>
+              <span class="typed-text txt-accent">Full-Stack AI Developer</span>
+            </p>
+          </div>
+
+          <p class="hero-description">
+            Hello! I'm Deepesh, a passionate Artificial Intelligence and Machine Learning student from DMI College of Engineering, Chennai. I enjoy building intelligent applications using Machine Learning, FastAPI, React, and modern AI technologies. My goal is to create innovative AI solutions that solve real-world problems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary magnetic">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary magnetic">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image-container">
+            <div class="avatar-glow"></div>
+            <!-- Circular Glassmorphism frame with Neon glow -->
+            <div class="avatar-frame circular-frame">
+              <img src="/assets/profile.jpg" alt="Deepesh M Professional Photo" class="avatar-img profile-img" />
+              <div class="frame-glass-highlight"></div>
+            </div>
+            <div class="floating-tech-card ftc-1 magnetic">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="floating-tech-card ftc-2 magnetic">
+              <i class="fa-solid fa-brain"></i>
+              <span>ML & AI</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3 class="about-subtitle">Computer Science B.E. (AI & ML)</h3>
+            <p class="about-text">
+              I am a third-year B.E. Computer Science (Artificial Intelligence & Machine Learning) student with a strong passion for Artificial Intelligence, Machine Learning, Full-Stack Development, and Data Science.
+            </p>
+            <p class="about-text">
+              I enjoy transforming ideas into real-world AI applications through modern technologies. I believe in continuous learning, practical implementation, and building projects that create meaningful impact.
+            </p>
+            <div class="about-quick-stats">
+              <div class="stat-item glass-stat">
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">Year BE</span>
+              </div>
+              <div class="stat-item glass-stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">AI Projects</span>
+              </div>
+              <div class="stat-item glass-stat">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Internship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-card tilt-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="skill-icon-bg">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge glowing-badge badge-blue">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-card tilt-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="skill-icon-bg">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3>Machine Learning</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge glowing-badge badge-purple">
+                <i class="fa-solid fa-brain"></i>
+                <span>Supervised Learning</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-purple">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Pandas & NumPy</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-purple">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <span>XGBoost</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-purple">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Prophet</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-purple">
+                <i class="fa-solid fa-gears"></i>
+                <span>Large Language Models</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-card tilt-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="skill-icon-bg">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge glowing-badge badge-cyan">
+                <i class="fa-solid fa-circle-nodes"></i>
+                <span>FastAPI</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-cyan">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-cyan">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Vite</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-cyan">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card tilt-card glass-panel">
+            <div class="skill-icon-header">
+              <div class="skill-icon-bg">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3>Tools & Platform</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge glowing-badge badge-orange">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-orange">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-badge glowing-badge badge-orange">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel tilt-card">
+              <div class="timeline-header">
+                <h3>Data Science Intern</h3>
+                <span class="timeline-date">Jun 2025 - Present</span>
+              </div>
+              <h4 class="company-name">Thiranex</h4>
+              <ul class="experience-bullets">
+                <li>Worked on real-world Data Science projects under industry mentorship.</li>
+                <li>Applied Machine Learning algorithms to solve practical business problems.</li>
+                <li>Built predictive models and performed data analysis.</li>
+                <li>Improved understanding of the complete ML workflow from preprocessing to deployment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="project-container">
+          <div class="project-card upgraded-project-card glass-panel tilt-card">
+            
+            <!-- Left Side: Interactive Screenshot Mockup -->
+            <div class="project-image-side screenshot-mock-side">
+              <div class="mock-device-header">
+                <span class="mock-dot red"></span>
+                <span class="mock-dot yellow"></span>
+                <span class="mock-dot green"></span>
+                <div class="mock-address-bar">http://localhost:3000/kaikani</div>
+              </div>
+              <div class="screenshot-display-container">
+                <!-- Project screenshots (preloaded and switchable) -->
+                <img src="/assets/ss1.png" alt="KaiKani Dashboard" class="project-screenshot active" data-ss="1" />
+                <img src="/assets/ss2.png" alt="KaiKani Compare Prices" class="project-screenshot" data-ss="2" />
+                <img src="/assets/ss3.png" alt="KaiKani Shopping Calculator" class="project-screenshot" data-ss="3" />
+                <img src="/assets/ss4.png" alt="KaiKani Weather Analytics" class="project-screenshot" data-ss="4" />
+                <img src="/assets/ss5.png" alt="KaiKani Admin Panel" class="project-screenshot" data-ss="5" />
+                
+                <div class="glass-reflection-overlay"></div>
+              </div>
+              
+              <!-- Tabs Navigation to switch screenshots -->
+              <div class="screenshot-tabs">
+                <button class="ss-tab-btn active" data-target="1">Dashboard</button>
+                <button class="ss-tab-btn" data-target="2">Compare Prices</button>
+                <button class="ss-tab-btn" data-target="3">Calculator</button>
+                <button class="ss-tab-btn" data-target="4">Weather Analytics</button>
+                <button class="ss-tab-btn" data-target="5">Admin Panel</button>
+              </div>
+            </div>
+
+            <!-- Right Side: Project Data & Details -->
+            <div class="project-info-side">
+              <div class="project-badge">Deep Learning & Time Series</div>
+              <h3 class="project-name">KaiKani — AI Market Price Predictor</h3>
+              <p class="project-description">
+                An AI-powered platform that predicts wholesale vegetable and fruit prices for Chennai's Koyambedu Market using Machine Learning. It enables merchants and consumers to anticipate market trends, calculate logistics costs, and switch natively between English and Tamil.
+              </p>
+              
+              <!-- Project Stats -->
+              <div class="project-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-val">94.2%</span>
+                  <span class="stat-lbl">XGBoost Accuracy</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-val">&lt;120ms</span>
+                  <span class="stat-lbl">API Latency</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-val">Realtime</span>
+                  <span class="stat-lbl">Chennai Prices</span>
+                </div>
+              </div>
+
+              <h4 class="project-subheading">Tech Stack & Icons:</h4>
+              <div class="tech-icons-row">
+                <div class="tech-icon-item" title="Python"><i class="fa-brands fa-python"></i></div>
+                <div class="tech-icon-item" title="FastAPI"><i class="fa-solid fa-circle-nodes"></i></div>
+                <div class="tech-icon-item" title="React"><i class="fa-brands fa-react"></i></div>
+                <div class="tech-icon-item" title="Vite"><i class="fa-solid fa-bolt"></i></div>
+                <div class="tech-icon-item" title="Tailwind CSS"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="tech-icon-item" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+              </div>
+
+              <div class="project-links upgraded-links">
+                <a href="https://github.com/melvindeepesh-boop" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-card glass-panel tilt-card">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-content">
+              <h3>B.E. Computer Science</h3>
+              <p class="edu-specialization">Artificial Intelligence & Machine Learning</p>
+              <h4 class="college-name">DMI College of Engineering</h4>
+              <div class="edu-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                <span><i class="fa-solid fa-calendar-days"></i> 2023 - 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-cards-container">
+          <!-- Floating Glowing Contact Cards -->
+          <div class="contact-card-box glass-panel tilt-card badge-blue">
+            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>Direct Inquiry</p>
+            <a href="mailto:melvindeepesh@gmail.com" class="c-link">melvindeepesh@gmail.com</a>
+          </div>
+
+          <div class="contact-card-box glass-panel tilt-card badge-purple">
+            <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>Professional Network</p>
+            <a href="https://linkedin.com/in/deepesh-m-b055b2389" target="_blank" rel="noopener noreferrer" class="c-link">Connect on LinkedIn</a>
+          </div>
+
+          <div class="contact-card-box glass-panel tilt-card badge-cyan">
+            <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>Source Code Repository</p>
+            <a href="https://github.com/melvindeepesh-boop" target="_blank" rel="noopener noreferrer" class="c-link">Check Repositories</a>
+          </div>
+
+          <div class="contact-card-box glass-panel tilt-card badge-orange">
+            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Phone</h3>
+            <p>Mobile Call</p>
+            <a href="tel:+917010468701" class="c-link">+91 7010468701</a>
+          </div>
+
+          <div class="contact-card-box glass-panel tilt-card badge-green">
+            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Location</h3>
+            <p>Base Country</p>
+            <span class="c-span">Chennai, Tamil Nadu, India</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-panel">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully! (Static demo)');">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <input type="text" id="name" required placeholder=" " />
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" required placeholder=" " />
+                <label for="form-email">Your Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required placeholder=" " />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" required rows="5" placeholder=" "></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit magnetic">
+              <span>Send Secure Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer-section">
+    <!-- Star and wave canvas background overlay -->
+    <canvas id="footer-stars-canvas"></canvas>
+    
+    <div class="footer-wave-container">
+      <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="currentColor" fill-opacity="0.05" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,149.3C672,139,768,149,864,170.7C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <path fill="currentColor" fill-opacity="0.03" d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,197.3C672,181,768,139,864,128C960,117,1056,139,1152,144C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+
+    <div class="container footer-container">
+      <p class="footer-designer">Designed & Developed by <span class="gradient-text">Deepesh M</span></p>
+      <p class="footer-copy">&copy; 2026 All Rights Reserved. Built with Three.js & GSAP.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="magnetic" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script type="module" src="/three-scene.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
